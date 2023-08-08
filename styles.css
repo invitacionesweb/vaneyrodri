@@ -1,0 +1,404 @@
+:root {
+    --color-principal:#F6F5F0;
+    --color-secundario:#9A7C44;
+    --color-terciario:#5C5957;
+    --color-cuarto:#D7CBB4;
+    --font-principal: 'Sawarabi Mincho', serif;
+    --font-secundaria: 'Dawning of a New Day', cursive;
+}
+body {
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 320px;
+
+}
+header {
+    background-color: var(--color-principal);
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-principal);
+    background-image: url(./img/background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: texto;
+    animation-duration: 5s;
+}
+header a {
+    margin-top: 12px;
+}
+header img {
+    width: 80%;
+    max-width: 460px;
+}
+@keyframes texto {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.boton {
+    border: 1px solid var(--color-secundario);
+    color: var(--color-secundario);
+    padding: 10px 30PX;
+    text-decoration: none;
+ }
+ .boton:hover {
+     color: var(--color-principal);
+     background-color: var(--color-secundario);
+     border: 1px solid var(--color-principal);
+     padding: 10px 30PX;
+     text-align: center;
+     text-decoration: none;
+ }
+ .boton2 {
+    border: 1px solid var(--color-principal);
+    color: var(--color-principal);
+    padding: 10px 30PX;
+    text-decoration: none;
+ }
+ .boton2:hover {
+     color: var(--color-secundario);
+     background-color: var(--color-principal);
+     border: 1px solid var(--color-secundario);
+     padding: 10px 30PX;
+     text-align: center;
+     text-decoration: none;
+ }
+
+.title {
+    text-align: center;
+    font-family: var(--font-principal);
+    color: var(--color-secundario);
+}
+.audiodiv {
+    width: 100%;
+    padding: auto;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ #cuenta {
+     display: flex;
+     justify-content: center;
+     margin: 0px;
+     padding: 10px 0;
+ }
+
+ .gifts img {
+     width: 48px;
+ }
+ .simply-section {
+     background-color: var(--color-principal);
+     color: var(--color-secundario);
+     width: 20vw;
+     max-width: 100px;
+     max-height: 100px;
+     height: 20vw;
+     margin: 0 5px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+
+ }
+ .simply-amount {
+     display: block;
+     font-size: 2.7rem;
+     font-weight: normal;
+ }
+.simply-word {
+    font-size: 1.3rem;
+}
+
+.informacion {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    padding-bottom: 40px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.informacion h2 {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-secundaria);
+    text-align: center;
+    color: var(--color-secundario);
+    font-size: 2.6rem;
+    font-weight: inherit;
+}
+.cards {
+    padding: 30px 0;
+    display: flex;
+}
+.informacion-card {
+    margin: 0;
+    margin: auto;
+    max-width: 400px;
+    padding: 0 60px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--color-secundario);
+
+}
+.informacion-card .text {
+    margin: 0 0 30px 0;
+}
+.informacion-card p {
+    margin: 0;
+    line-height: 120%;
+    padding: 0;
+    
+}
+.galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.galeria img {
+    width: 25vw;
+}
+.timing {
+    width: 100%;
+    background-color: var(--color-cuarto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-principal);
+    text-align: center;
+    font-size: 1.1rem;
+    gap: 60px;
+    padding: 20px 0;
+}
+.timing p {
+    padding: 0;
+    margin: 0;
+}
+.timing img {
+    width: 60px;
+}
+.cards-spotify {
+    background-image: url(./img/background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cards-spotify, .cards-instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+    padding: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: var(--color-principal);
+}
+.cards-spotify, .cards-instagram, p {
+    padding: 2px 0;
+}
+.cards-spotify {
+    color: var(--color-secundario);
+    
+}
+.cards-instagram {
+    background-color: var(--color-cuarto);
+    color: var(--color-principal);
+}
+
+.dresscode {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-principal);
+    padding: 20px 0;
+    text-align: center;
+}
+.dresscode h2 {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-secundaria);
+    font-size: 38px;
+    color: var(--color-secundario);
+}
+.dresscode p {
+    margin: 0;
+    line-height: 120%;
+    padding: 0 30px 20px 30px;
+    font-size: 1.2rem;
+    color: var(--color-secundario);
+
+}
+.dresscode img {
+    width: 280px;
+}
+
+.gifts {
+    padding: 20px 0 30px 0;
+    text-align: center;
+    color: var(--color-secundario);
+    font-size: 1.2rem;
+   
+}
+.gifts p {
+    margin: 0;
+    padding: 0 30px;
+}
+#contenedor {
+    width: auto;
+    height: 60px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#contenedor > div {
+    display: flex;
+}
+
+span#enlace {
+    background-color: var(--color-secundario);
+    font-size: 1em;
+    padding: 14px 40px 8px 48px ;
+    text-align: center;
+    color: var(--color-principal);
+    border: 1px solid var(--color-secundario);
+    margin-top: 10px;
+    border-right: 2px solid var(--color-principal);
+
+}
+
+button#copiador {
+    background-color: var(--color-secundario);
+    color: white;
+    border: none;
+    padding: 12px;    
+    font-size: 1em;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid var(--color-secundario);
+    margin-top: 10px;
+   
+
+}
+#contenedor2 {
+    width: auto;
+    height: 60px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor2 > div {
+    display: flex;
+}
+footer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: var(--color-cuarto);
+    color:#B66848;
+    padding: 40px 0;
+    flex-direction: column;
+    text-align: center;
+}
+footer .logo {
+    width: 40px;
+    padding: 0;
+    margin: 0;
+}
+footer .contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+}
+footer img {
+    width: 60px;
+}
+.contenido ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+
+}
+
+.contenido a {
+    color: var(--color-principal);
+}
+.contenido a:hover {
+    color: var(--color-secundario);
+}
+
+
+ @media (max-width: 600px) {
+    header {  
+        background-image: url(./img/background1.png);
+        background-size: cover;
+        background-position: top;
+
+    }
+    .simply-amount {
+        display: block;
+        font-size: 2.2rem;
+    }
+    .simply-word {
+        font-size: 1rem;
+    }
+    .cards {
+        padding:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .f1, .f2, .f3 {
+        display: none;
+    }
+    .galeria {
+        display: grid;
+        grid-template-columns:1fr;
+    }
+  
+    .galeria img {
+        width: 100vw;
+    }
+    .timing {
+        flex-direction: column;
+        gap: 20px;
+        background-image: url(./img/background4.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    .lista {
+        background-image: url(./img/background5.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .cards-instagram {
+        color: var(--color-principal);
+        background-image: url(./img/8.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+ }
